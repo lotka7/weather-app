@@ -1,5 +1,9 @@
 ## Weather Application
 
+Install dependencies
+
+### `yarn start`
+
 ## Available Scripts
 
 In the project directory, you can run:
