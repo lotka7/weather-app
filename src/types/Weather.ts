@@ -1,3 +1,5 @@
+import { WeatherCategory } from '../components/WeatherDetails';
+
 export type WeatherData = {
   coord: {
     lon: number;
@@ -6,7 +8,7 @@ export type WeatherData = {
   weather: {
     id: number;
     main: string;
-    description: string;
+    description: WeatherCategory;
     icon: string;
   }[];
   base: string;

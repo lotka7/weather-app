@@ -20,7 +20,6 @@ const CityWeather = () => {
 
   const getCurrWeather = async (city: City) => {
     const res = await getCurrentWeather(city);
-    console.log('metrics', res);
     setCurrWeather(res);
   };
 

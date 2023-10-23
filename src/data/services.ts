@@ -8,6 +8,7 @@ const listCities = async (
   maxRows?: number
 ): Promise<City[]> => {
   try {
+    // TODO - create a custom API or use a better one, where more exact filter params can be added
     const response = await axios.get('http://api.geonames.org/searchJSON', {
       params: {
         q: `${searchTerm}`,

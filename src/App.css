@@ -28,6 +28,10 @@
   color: #61dafb;
 }
 
+.css-1u9des2-indicatorSeparator {
+  display: none;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

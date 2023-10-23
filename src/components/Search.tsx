@@ -20,6 +20,7 @@ const customStyles = {
     backgroundColor: '#003244',
     width: '250px',
     color: state.isFocused ? '#61dafb' : null,
+    cursor: 'pointer',
   }),
   menuList: (provided: any, state: any) => ({
     ...provided,
@@ -56,7 +57,6 @@ export default function Search({
     inputValue: string
   ): Promise<{ options: { value: string; label: string }[] }> => {
     const res = await listCities(inputValue);
-    console.log(res);
     return {
       options: res.map((city: City) => {
         return {
@@ -68,7 +68,6 @@ export default function Search({
   };
 
   const handleOnChange = (searchData: any) => {
-    console.log('asdasd', searchData);
     setSearch(searchData);
     onSearchChange(searchData);
   };

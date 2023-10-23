@@ -17,13 +17,11 @@ const CityAdd = () => {
     label: string;
   }) => {
     const [lat, lng, countryCode] = searchData.value.split('|');
-    console.log('lat, lng', lat, lng);
     const currentCity = { lat, lng, name: searchData.label, countryCode };
     setSelectedCity(currentCity);
   };
 
   const handleAddCity = () => {
-    console.log('selectedCity', selectedCity);
     if (selectedCity) {
       dispatch(addCity(selectedCity));
       setSelectedCity(null);
