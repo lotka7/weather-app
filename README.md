@@ -2,7 +2,7 @@
 
 Install dependencies
 
-### `yarn start`
+### `yarn`
 
 ## Available Scripts
 
